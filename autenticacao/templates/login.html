@@ -1,0 +1,27 @@
+{% extends 'bases/base.html' %}
+{% load static %}
+{% block 'head' %}
+    <link href="{% static 'autenticacao/css/usuario.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block 'body' %}
+
+    <div class="container-fluid bg-inscricao">
+        
+        <div class="row">
+            <div class="col-md">
+                <h3 class="logo">BETO</h3>
+
+                {% include "partials/autenticacao/login.html" %}
+                
+                
+
+            </div>
+
+            <div>
+
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
