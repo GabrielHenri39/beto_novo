@@ -8,4 +8,3 @@ urlpatterns = [
     path('auth/',include('autenticacao.urls')),
     path('',include('cliente.urls')),
 ]
-

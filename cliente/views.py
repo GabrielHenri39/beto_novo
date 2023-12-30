@@ -5,6 +5,10 @@ from .forms import ClienteForm
 from .models import Cliente
 from django.contrib import messages
 from django.contrib.messages import constants
+from django.http import HttpResponse
+
+
+
 @login_required(login_url='auth/login')
 def index(request):
     return render(request, 'index.html')

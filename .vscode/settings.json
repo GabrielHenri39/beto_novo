@@ -1,5 +1,16 @@
 {
     "python.analysis.typeCheckingMode": "basic",
     "python.analysis.autoImportCompletions": true,
-    "editor.wordWrap": "on"
+    "editor.wordWrap": "on",
+    "editor.renderLineHighlight": "gutter",
+    "editor.parameterHints.enabled": false,
+    "editor.inlineSuggest.enabled": true, 
+    "editor.stickyScroll.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    }
+
 }

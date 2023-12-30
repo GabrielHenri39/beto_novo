@@ -1,2 +1,31 @@
 {% include "bases/base.html" %}
+{% block 'body' %}
+    
+    <div class='container'>
+        <div class ='row'>
+            <form class='col-md-6 col-lg-6  col-xs-6 ' action="." method='POST'>
+                <div class='row'>
+                    {% csrf_token %}
+                    {% for f in form %}
+                    {% if not f.is_hidden %}
+                        <div class='form-group col-md-6 col-xs-6'>
+                            {{ f.label}}
+                            <br>
+                            {{f}}
+                            <br>
+                        </div>
+                        
+                    {% else %}
+                        {{f}}
+                    
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                <br>
+                <button type="submit" class='btn btn-success'> salva </button>
+            </form>
+        </div>
+    </div>
+ 
 
+{% endblock  %}
